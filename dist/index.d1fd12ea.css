@@ -1,0 +1,165 @@
+.content-center {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header, footer {
+  width: 100%;
+  background: #f4f7fc;
+}
+
+header {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  font-weight: 500;
+}
+
+header input {
+  width: 405px;
+  height: 53px;
+  margin-right: 65px;
+}
+
+header #url {
+  padding-left: .75em;
+}
+
+header #port {
+  padding-left: 1.5em;
+}
+
+header table {
+  width: 100%;
+  border: none;
+}
+
+header table td {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  height: 3em;
+  box-sizing: border-box;
+  border: 1px solid #8d9196;
+  border-radius: 4px;
+  font-family: Prompt;
+  font-size: 1rem;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  height: 53px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+button.blue {
+  background: #3c64b1;
+}
+
+button.green {
+  background: #2b6;
+}
+
+#content {
+  padding-bottom: 2.5em;
+}
+
+#content #content-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 1.5em;
+  display: flex;
+}
+
+#content #content-header #label {
+  font-weight: 500;
+}
+
+#content #houselist-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+  margin-top: 2em;
+}
+
+#content #houselist-table tr:hover {
+  background: #f4f7fc;
+}
+
+#content #houselist-table td {
+  height: 4em;
+  border: 1px solid #e0e0e0;
+}
+
+#content #houselist-table td:first-child {
+  width: 4em;
+}
+
+#content #houselist-table td:last-child {
+  width: 270px;
+}
+
+#content #houselist-table td:last-child div {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: .5em 1.5em;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#content #houselist-table td:last-child #view-detail-btn {
+  color: #f90;
+  background: #fff7e6;
+  margin-right: 5px;
+}
+
+#content #houselist-table td:last-child #delete-btn {
+  color: #b93e5c;
+  background: #fdf4f7;
+}
+
+#content #houselist-table th {
+  height: 4em;
+  border: 1px solid #e0e0e0;
+  font-weight: 700;
+}
+
+#content #rpp-selector {
+  text-align: right;
+  margin-top: 1em;
+}
+
+#content #rpp-selector select {
+  border: none;
+  margin-right: 1em;
+  font-family: Prompt;
+}
+
+#content #rpp-selector #previous-page {
+  margin-right: 3.5em;
+}
+
+footer {
+  height: 235px;
+  justify-content: center;
+  display: flex;
+}
+
+footer select {
+  height: 53px;
+  width: 405px;
+  margin-top: 65px;
+  font-family: Prompt;
+}
+
+footer select option {
+  padding-left: 1em;
+}
+
+/*# sourceMappingURL=index.d1fd12ea.css.map */

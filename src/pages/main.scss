@@ -1,0 +1,148 @@
+$box-height: 53px;
+$box-radius: 4px;
+.content-center {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+header,footer {
+    background: #f4f7fc;
+    width: 100%;
+}
+
+header {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    font-weight: 500;
+    input {
+        width: 405px;
+        height: $box-height;
+        margin-right: 65px;
+    }
+    #url {
+        padding-left: 0.75em;
+    }
+    #port {
+        padding-left: 1.5em;
+    }
+    table {
+        width: 100%;
+        border: none;
+        td {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+input {
+    border-radius: $box-radius;
+    height: 3em;
+    border: 1px solid #8D9196;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Prompt;
+}
+
+button {
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: $box-height;
+    border-radius: $box-radius;
+    &.blue {
+        background: #3C64B1;
+    }
+    &.green {
+        background: #22BB66;
+    }
+}
+
+
+#content {
+    padding-bottom: 2.5em;
+    #content-header {
+        margin-top: 1em;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #label {
+            font-weight: 500;
+        }
+    }
+    #houselist-table {
+        margin-top: 2em;
+        width: 100%;
+        text-align: center;
+        border: 1px solid #E0E0E0;
+        border-collapse: collapse;
+        tr {
+            &:hover {
+                background: #F4F7FC;
+            }
+        }
+        td {
+            border: 1px solid #E0E0E0;
+            height: 4em;
+            &:first-child {
+                width: 4em;
+            }
+            &:last-child {
+                width: 270px;
+                div {
+                    display: inline-block;
+                    font-size: 14px;
+                    padding:0.5em 1.5em; 
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+                #view-detail-btn {
+                    background: #FFF7E6;
+                    color: #FF9900; 
+                    margin-right: 5px;
+                }
+                #delete-btn {
+                    background: #FDF4F7;
+                    color: #B93E5C;
+                }
+            }
+        }
+        th {
+            border: 1px solid #E0E0E0;
+            height: 4em;
+            font-weight: 700;
+        }
+    }
+    #rpp-selector {
+        margin-top: 1em;
+        text-align: right;
+        select {
+            border:none;
+            font-family: 'Prompt';
+            margin-right: 1em;
+        }
+        #previous-page {
+            margin-right: 3.5em;
+        }
+    }
+}
+
+
+footer {
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    // select {
+    //     font-family: 'Prompt';
+    //     margin-top: 65px;
+    //     height: $box-height;
+    //     width: 405px;
+    //     option {
+    //         padding-left: 1em;
+    //     }
+    // }
+
+}
+
