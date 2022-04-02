@@ -44,17 +44,17 @@ input {
     font-family: Prompt;
 }
 
-button {
+button.houselist-btn {
     border-style: none;
     color: white;
     cursor: pointer;
     width: 200px;
     height: $box-height;
     border-radius: $box-radius;
-    &.blue {
+    &#connect-btn {
         background: #3C64B1;
     }
-    &.green {
+    &#create-btn {
         background: #22BB66;
     }
 }
@@ -88,6 +88,12 @@ button {
             height: 4em;
             &:first-child {
                 width: 4em;
+            }
+            &:nth-child(2) {
+                width: 400px;
+            }
+            &:nth-child(4) {
+                width: 200px;
             }
             &:last-child {
                 width: 270px;
@@ -123,6 +129,9 @@ button {
             font-family: 'Prompt';
             margin-right: 1em;
         }
+        img {
+            cursor: pointer;
+        }
         #previous-page {
             margin-right: 3.5em;
         }
@@ -133,16 +142,81 @@ button {
 footer {
     height: 235px;
     display: flex;
-    justify-content: center;
-    // select {
-    //     font-family: 'Prompt';
-    //     margin-top: 65px;
-    //     height: $box-height;
-    //     width: 405px;
-    //     option {
-    //         padding-left: 1em;
-    //     }
-    // }
+    flex-direction: column;
+    align-items: center;
+    #select-container {
 
+        #postcode-select {
+            width: 405px;
+            margin-top: 65px;
+        }
+    }
+    #postcode-detail {
+        font-weight: 600;
+        color: #3C64B1;
+    }
 }
 
+.modal-content {
+    padding: 1.75em 1.5em;
+    .my-modal-header {
+        font-weight: 500;
+        margin-bottom: 0.25em;
+    }
+    .btn-toolbar {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        width: 164px;
+    }
+    #upsert-cancel-btn {
+        border: 1px solid #C0C5CE;
+    }
+    #upsert-confirm-btn {
+        background: #22BB66;
+    }
+
+    #result-icon {
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        &.success {
+            background: #22BB66;
+        }
+        &.fail {
+            background: #B93E5C;
+        }
+    }
+}
+
+.result-modal {
+    .modal-dialog {
+        width: 331px !important;
+        .modal-content {
+            border-radius: 10px;
+            color: #8D9196;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3em 0;
+            #result-label {
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            #result-description {
+                font-weight: 600;
+            }
+        }
+        button {
+            margin-top: 2em;
+            border: 1px solid #C0C5CE;
+            padding: 0.75em;
+
+        }
+    }
+}

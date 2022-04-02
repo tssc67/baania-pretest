@@ -2,6 +2,10 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "esModuleInterop": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
     "jsx": "react"
   },
   "include": [

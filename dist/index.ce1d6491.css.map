@@ -1,1 +1,1 @@
-{"mappings":"AAAA","sources":["src/index.scss"],"sourcesContent":["body, html {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-size: 16px;\r\n    font-family: 'Prompt';\r\n}\r\n\r\n"],"names":[],"version":3,"file":"index.ce1d6491.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AAAA","sources":["src/index.scss"],"sourcesContent":["body, html {\n    margin: 0;\n    padding: 0;\n    font-size: 16px;\n    font-family: 'Prompt';\n}\n\n"],"names":[],"version":3,"file":"index.ce1d6491.css.map","sourceRoot":"/__parcel_source_root/"}
